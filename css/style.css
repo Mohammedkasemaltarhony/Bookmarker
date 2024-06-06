@@ -1,0 +1,141 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color:#f7ecde;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  
+  height: 100vh;
+}
+
+.title-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.title {
+  display: inline-block;
+
+  align-items: center;
+  justify-content: center;
+  font-family: "Pacifico", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: #000;
+  background: 
+    linear-gradient(to top, #ffc107 50%, transparent 50%) 0 30% / 100% 200%;
+  transition: background-position 0.3s ease-in;
+}
+
+.title:hover {
+  background: 
+  linear-gradient(to top, #ffc107 50%, transparent 50%) 0 65% / 100% 200%;
+}
+
+
+
+
+
+
+.dotted { 
+  border-top: 3px #000 dotted; 
+} 
+
+.container {
+  
+  border-radius: 8px;
+  width: 80%;
+  padding: 20px;
+ 
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ff9800;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="url"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #ff9800;
+  color: white;
+}
+
+a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+input.invalid {
+  border-color: red;
+}
+
+input:focus {
+  border-color: orange;
+}
+
+input.invalid {
+  border-color: red;
+  background-color: #ffcccc;
+}
+
+input:focus {
+  border-color: orange;
+  background-color: #fff5e6;
+}
+

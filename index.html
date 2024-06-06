@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class = 'title-div'
+        
+        ><h1 class = 'title' >Bookmarker</h1></div>
+        <div class='dotted'></div> 
+        <form id="bookmarkForm">
+            <label for="siteName">📚 Site Name</label>
+            <input type="text" id="siteName" placeholder="Bookmark Name" required>
+            <label for="siteURL">🔗 Site URL</label>
+            <input type="url" id="siteURL" placeholder="Website URL" required>
+            <button type="submit" onclick="saveBookmark(); return false;">Submit</button>
+        </form>
+        <table id="bookmarksTable">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Bookmarks will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
